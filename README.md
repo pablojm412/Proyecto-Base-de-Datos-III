@@ -1,20 +1,25 @@
-# Sistema de Gestión - Refugio de Animales 🐾
-**Proyecto Integrador - Base de Datos III**
+# Proyecto Integrador: Gestión de Refugio de Animales 🐾
+## Materia: Base de Datos III
 
-Este proyecto consiste en una base de datos relacional diseñada para optimizar la administración de un refugio de animales, permitiendo un seguimiento integral desde el ingreso del animal hasta su adopción.
+Este repositorio contiene la entrega final del Proyecto Integrador. El objetivo es gestionar de manera eficiente la información de un refugio de animales, incluyendo voluntarios, historias clínicas y turnos veterinarios.
 
-### 🚀 Características principales:
-* **Gestión de Salud:** Seguimiento de vacunas y estado de castración.
-* **Control de Adopciones:** Vinculación de adoptantes con animales mediante un proceso automatizado.
-* **Sistema de Donaciones:** Registro de ingresos monetarios y de insumos (alimento, medicina).
-* **Atención Veterinaria:** Historial detallado de procedimientos y observaciones por animal.
+## 📄 Contenido del Proyecto
+El proyecto se compone de los siguientes archivos principales:
 
-### 🛠️ Objetos de Base de Datos Incluidos:
-Para cumplir con los requerimientos de la materia, el script incluye:
-* **Vistas:** `Vista_Pendientes_Salud` para identificar rápidamente animales que requieren atención.
-* **Procedimientos Almacenados:** `RegistrarAdopcion` que automatiza el cambio de estado del animal al ser adoptado.
-* **Consultas Avanzadas:** Reporte de balance mensual de donaciones agrupado por tipo.
+1.  **Proyecto_Integrador_Refugio.sql**: Script completo que incluye:
+    *   **DDL**: Creación de tablas (`voluntarios`, `animales`, `historias_clinicas`, `turnos_veterinarios`).
+    *   **Carga Masiva**: Generación automática de miles de registros para pruebas de rendimiento usando `generate_series`.
+    *   **Optimización**: Implementación de índices (`HASH` y `B-TREE`) para acelerar las consultas.
+    *   **Estructuras Avanzadas**: Uso de tipos de datos `JSONB` para flexibilidad en datos médicos y `TSRANGE` para periodos de atención.
 
-### 📁 Instrucciones:
-1. Ejecutar el script `Proyecto_Integrador_Refugio.sql` en su gestor de base de datos.
-2. El script creará automáticamente la base de datos, las tablas y cargará datos de prueba iniciales.
+2.  **Capturas_Resultados.pdf**: Documento con las capturas de pantalla que demuestran la ejecución exitosa del script y los resultados de las consultas solicitadas.
+
+## 🚀 Tecnologías Utilizadas
+*   **Motor de Base de Datos**: PostgreSQL.
+*   **Herramientas**: Git / GitHub para control de versiones.
+
+## 🛠️ Instrucciones de Ejecución
+1. Clonar el repositorio.
+2. Ejecutar el script `.sql` en un entorno de PostgreSQL.
+3. Verificar la integridad de los datos y los índices creados.
+
