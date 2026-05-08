@@ -12,7 +12,7 @@ El proyecto se compone de los siguientes archivos principales:
     *   **Optimización**: Implementación de índices (`HASH` y `B-TREE`) para acelerar las consultas.
     *   **Estructuras Avanzadas**: Uso de tipos de datos `JSONB` para flexibilidad en datos médicos y `TSRANGE` para periodos de atención.
 
-2.  **Capturas_Resultados.pdf**: Documento con las capturas de pantalla que demuestran la ejecución exitosa del script y los resultados de las consultas solicitadas.
+2.  **informe_bd3_Pablo--.final.pdf**: Documento con las capturas de pantalla que demuestran la ejecución exitosa del script y los resultados de las consultas solicitadas.
 
 ## 🚀 Tecnologías Utilizadas
 *   **Motor de Base de Datos**: PostgreSQL.
@@ -22,4 +22,3 @@ El proyecto se compone de los siguientes archivos principales:
 1. Clonar el repositorio.
 2. Ejecutar el script `.sql` en un entorno de PostgreSQL.
 3. Verificar la integridad de los datos y los índices creados.
-
